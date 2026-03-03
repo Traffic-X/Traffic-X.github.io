@@ -1,0 +1,354 @@
+[
+  {
+    "title": "Sat2RealCity: Geometry-Aware and Appearance-Controllable 3D Urban Generation from Satellite Imagery",
+    "authors": "Y Kang, X Wang, Z Wu, Y Shi, H Zhu",
+    "venue": "arXiv preprint arXiv:2511.11470 , 2025",
+    "year": 2025,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:_Qo2XoVZTnwC",
+    "type": "paper"
+  },
+  {
+    "title": "RT-DETRv3: Real-Time End-to-End Object Detection with Hierarchical Dense Positive Supervision.",
+    "authors": "S Wang, C Xia, F Lv, Y Shi",
+    "venue": "WACV, 1628-1636 , 2025",
+    "year": 2025,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:-f6ydRqryjwC",
+    "type": "paper"
+  },
+  {
+    "title": "Explore the LiDAR-Camera Dynamic Adjustment Fusion for 3D Object Detection",
+    "authors": "Y Yang, X Gao, T Wang, X Hao, Y Shi, X Tan, X Ye",
+    "venue": "2025 IEEE International Conference on Robotics and Automation (ICRA), 6291-6298 , 2025",
+    "year": 2025,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:ZeXyd9-uunAC",
+    "type": "paper"
+  },
+  {
+    "title": "DoReMi: A Domain-Representation Mixture Framework for Generalizable 3D Understanding",
+    "authors": "M Xing, X Wang, Y Shi",
+    "venue": "arXiv preprint arXiv:2511.11232 , 2025",
+    "year": 2025,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:e5wmG9Sq2KIC",
+    "type": "paper"
+  },
+  {
+    "title": "Cruise: Cooperative reconstruction and editing in v2x scenarios using gaussian splatting",
+    "authors": "H Xu, S Zhang, P Li, B Ye, X Chen, H Gao, J Zheng, X Song, Z Peng, ...",
+    "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems … , 2025",
+    "year": 2025,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:R3hNpaxXUhUC",
+    "type": "paper"
+  },
+  {
+    "title": "AttentionGS: Towards Initialization-Free 3D Gaussian Splatting via Structural Attention",
+    "authors": "Z Liu, Z Li, Y Shi, X Li",
+    "venue": "arXiv preprint arXiv:2506.23611 , 2025",
+    "year": 2025,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:TQgYirikUcIC",
+    "type": "paper"
+  },
+  {
+    "title": "Vit-comer: Vision transformer with convolutional multi-scale feature interaction for dense predictions",
+    "authors": "C Xia, X Wang, F Lv, X Hao, Y Shi",
+    "venue": "Proceedings of the IEEE/CVF conference on computer vision and pattern … , 2024",
+    "year": 2024,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:hC7cP41nSMkC",
+    "type": "paper"
+  },
+  {
+    "title": "RopeBEV: A Multi-Camera Roadside Perception Network in Bird's-Eye-View",
+    "authors": "J Jia, G Yi, Y Shi",
+    "venue": "arXiv preprint arXiv:2409.11706 , 2024",
+    "year": 2024,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:hFOr9nPyWt4C",
+    "type": "paper"
+  },
+  {
+    "title": "Offsetnet: Towards efficient multiple object tracking, detection, and segmentation",
+    "authors": "W Zhang, J Li, M Xia, X Gao, X Tan, Y Shi, Z Huang, G Li",
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence 47 (2), 949-960 , 2024",
+    "year": 2024,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:HDshCWvjkbEC",
+    "type": "paper"
+  },
+  {
+    "title": "Monolss: Learnable sample selection for monocular 3d detection",
+    "authors": "Z Li, J Jia, Y Shi",
+    "venue": "2024 International Conference on 3D Vision (3DV), 1125-1135 , 2024",
+    "year": 2024,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:mVmsd5A6BfQC",
+    "type": "paper"
+  },
+  {
+    "title": "Evaluation of Pedestrian Safety in a High-Fidelity Simulation Environment Framework",
+    "authors": "L Ma, L Chen, Y Zhang, M Chu, W Jiang, J Shen, C Li, Y Shi, N Luo, ...",
+    "venue": "2024 IEEE 27th International Conference on Intelligent Transportation … , 2024",
+    "year": 2024,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:qUcmZB5y_30C",
+    "type": "paper"
+  },
+  {
+    "title": "V2x-seq: A large-scale sequential dataset for vehicle-infrastructure cooperative perception and forecasting",
+    "authors": "H Yu, W Yang, H Ruan, Z Yang, Y Tang, X Gao, X Hao, Y Shi, Y Pan, ...",
+    "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern … , 2023",
+    "year": 2023,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:ULOm3_A8WrAC",
+    "type": "paper"
+  },
+  {
+    "title": "Transiff: An instance-level feature fusion framework for vehicle-infrastructure cooperative 3d detection with transformers",
+    "authors": "Z Chen, Y Shi, J Jia",
+    "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision … , 2023",
+    "year": 2023,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:_kc_bZDykSQC",
+    "type": "paper"
+  },
+  {
+    "title": "Open-Transmind: A new baseline and benchmark for 1st foundation model challenge of intelligent transportation",
+    "authors": "Y Shi, F Lv, X Wang, C Xia, S Li, S Yang, T Xi, G Zhang",
+    "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern … , 2023",
+    "year": 2023,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:KlAtU1dfN6UC",
+    "type": "paper"
+  },
+  {
+    "title": "Monouni: A unified vehicle and infrastructure-side monocular 3d object detection network with sufficient depth clues",
+    "authors": "J Jinrang, Z Li, Y Shi",
+    "venue": "Advances in Neural Information Processing Systems 36, 11703-11715 , 2023",
+    "year": 2023,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:qxL8FJ1GzNcC",
+    "type": "paper"
+  },
+  {
+    "title": "M Sim: A Long-Term Interactive Driving Simulator",
+    "authors": "Z Han, Z Yan, Y Li, P Li, Y Shi, N Luo, X Gao, Y Shi, P Huang, J Gong, ...",
+    "venue": "CAAI International Conference on Artificial Intelligence, 172-176 , 2023",
+    "year": 2023,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:QIV2ME_5wuYC",
+    "type": "paper"
+  },
+  {
+    "title": "Long-Term Interactive Driving Simulation: MPC to the Rescue",
+    "authors": "Z Han, Z Yan, Y Li, P Li, Y Shi, N Luo, X Gao, Y Shi, P Huang, J Gong, ...",
+    "venue": "CAAI International Conference on Artificial Intelligence, 177-188 , 2023",
+    "year": 2023,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:9ZlFYXVOiuMC",
+    "type": "paper"
+  },
+  {
+    "title": "Intelligent roadside unit",
+    "authors": "L Fang, H Wang, X Hu, S Tao, Y Shi, H Cao",
+    "venue": "US Patent 11,579,285 , 2023",
+    "year": 2023,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:Se3iqnhoufwC",
+    "type": "patent"
+  },
+  {
+    "title": "Int2: Interactive trajectory prediction at intersections",
+    "authors": "Z Yan, P Li, Z Fu, S Xu, Y Shi, X Chen, Y Zheng, Y Li, T Liu, C Li, N Luo, ...",
+    "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision … , 2023",
+    "year": 2023,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:4TOpqqG69KYC",
+    "type": "paper"
+  },
+  {
+    "title": "Dusa: Decoupled unsupervised sim2real adaptation for vehicle-to-everything collaborative perception",
+    "authors": "X Kong, W Jiang, J Jia, Y Shi, R Xu, S Liu",
+    "venue": "Proceedings of the 31st ACM International Conference on Multimedia, 1943-1954 , 2023",
+    "year": 2023,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:YOwf2qJgpHMC",
+    "type": "paper"
+  },
+  {
+    "title": "Competition for roadside camera monocular 3D object detection",
+    "authors": "J Jia, Y Shi, Y Qu, R Wang, X Xu, H Zhang",
+    "venue": "National Science Review 10 (6), nwad121 , 2023",
+    "year": 2023,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:Zph67rFs4hoC",
+    "type": "paper"
+  },
+  {
+    "title": "Rope3d: The roadside perception dataset for autonomous driving and monocular 3d object detection task",
+    "authors": "X Ye, M Shu, H Li, Y Shi, Y Li, G Wang, X Tan, E Ding",
+    "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern … , 2022",
+    "year": 2022,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:aqlVkmm33-oC",
+    "type": "paper"
+  },
+  {
+    "title": "Rope3D: TheRoadside Perception Dataset for Autonomous Driving and Monocular 3D Object Detection Task",
+    "authors": "X Ye, M Shu, H Li, Y Shi, Y Li, G Wang, X Tan, E Ding",
+    "venue": "arXiv preprint arXiv:2203.13608 , 2022",
+    "year": 2022,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:4DMP91E08xMC",
+    "type": "paper"
+  },
+  {
+    "title": "Method for indicating obstacle by smart roadside unit",
+    "authors": "Y Shi, X Hu, H Cao, H Wang, J TAO",
+    "venue": "US Patent 11,353,579 , 2022",
+    "year": 2022,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:MXK_kJrjxJIC",
+    "type": "patent"
+  },
+  {
+    "title": "Method and apparatus for jointly calibrating external parameters of multiple cameras, device and medium",
+    "authors": "JIA Jinrang, Y Shi, X Hu",
+    "venue": "US Patent 11,394,872 , 2022",
+    "year": 2022,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:_FxGoFyzp5QC",
+    "type": "patent"
+  },
+  {
+    "title": "Intelligent roadside unit and control method thereof",
+    "authors": "H Cao, L Fang, X Hu, Y Shi, S Tao, H Wang",
+    "venue": "US Patent 11,506,780 , 2022",
+    "year": 2022,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:LkGwnXOMwfcC",
+    "type": "patent"
+  },
+  {
+    "title": "Data transmission method and device for intelligent driving vehicle, and device",
+    "authors": "Yifeng Shi, Xing Hu, Haisong Wang, Lei Fang, Ji TAO",
+    "venue": "US Patent 11,374,688 , 2022",
+    "year": 2022,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:WF5omc3nYNoC",
+    "type": "patent"
+  },
+  {
+    "title": "Dair-v2x: A large-scale dataset for vehicle-infrastructure cooperative 3d object detection",
+    "authors": "H Yu, Y Luo, M Shu, Y Huo, Z Yang, Y Shi, Z Guo, H Li, X Hu, J Yuan, ...",
+    "venue": "Proceedings of the IEEE/CVF conference on computer vision and pattern … , 2022",
+    "year": 2022,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:Y0pCki6q_DkC",
+    "type": "paper"
+  },
+  {
+    "title": "Communication system and method of autonomous vehicle and terminal device",
+    "authors": "Y Shi, X Hu, H Wang, L Fang, J TAO",
+    "venue": "US Patent 11,368,827 , 2022",
+    "year": 2022,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:5nxA0vEk-isC",
+    "type": "patent"
+  },
+  {
+    "title": "A High Fidelity Simulation Framework for Potential Safety Benefits Estimation of Cooperative Pedestrian Perception",
+    "authors": "L Chen, Y Zhang, W Jiang, J Gong, J Shen, M Chu, C Li, Y Pan, Y Shi, ...",
+    "venue": "arXiv e-prints, arXiv: 2210.08731 , 2022",
+    "year": 2022,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:W7OEmFMy1HYC",
+    "type": "paper"
+  },
+  {
+    "title": "Vehicle positioning method, apparatus and device",
+    "authors": "S Tao, Z Shen, H Cao, Y Shi, L Fang, H Wang, J TAO",
+    "venue": "US Patent 10,969,498 , 2021",
+    "year": 2021,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:UebtZRa9Y70C",
+    "type": "patent"
+  },
+  {
+    "title": "Smart roadside unit and method for processing information by smart roadside unit",
+    "authors": "L Fang, H Wang, X Hu, S Tao, Y Shi",
+    "venue": "US Patent 11,145,194 , 2021",
+    "year": 2021,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:roLk4NBRz8UC",
+    "type": "patent"
+  },
+  {
+    "title": "Robust and online vehicle counting at crowded intersections",
+    "authors": "J Lu, M Xia, X Gao, X Yang, T Tao, H Meng, W Zhang, X Tan, Y Shi, G Li, ...",
+    "venue": "Proceedings of the IEEE/CVF conference on computer vision and pattern … , 2021",
+    "year": 2021,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:qjMakFHDy7sC",
+    "type": "paper"
+  },
+  {
+    "title": "Method, apparatus, device and medium for calibrating intelligent roadside unit",
+    "authors": "Y Shi, T Xia, X Hu, H Wang, J TAO",
+    "venue": "US Patent 10,950,004 , 2021",
+    "year": 2021,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:8k81kl-MbHgC",
+    "type": "patent"
+  },
+  {
+    "title": "Dsanet: Dynamic segment aggregation network for video-level representation learning",
+    "authors": "W Wu, Y Zhao, Y Xu, X Tan, D He, Z Zou, J Ye, Y Li, M Yao, Z Dong, Y Shi",
+    "venue": "Proceedings of the 29th ACM international conference on multimedia, 1903-1911 , 2021",
+    "year": 2021,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:9yKSN-GCB0IC",
+    "type": "paper"
+  },
+  {
+    "title": "Danet: Dimension apart network for radar object detection",
+    "authors": "B Ju, W Yang, J Jia, X Ye, Q Chen, X Tan, H Sun, Y Shi, E Ding",
+    "venue": "Proceedings of the 2021 international conference on multimedia retrieval … , 2021",
+    "year": 2021,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:IjCSPb-OGe4C",
+    "type": "paper"
+  },
+  {
+    "title": "A robust mtmc tracking system for ai-city challenge 2021",
+    "authors": "J Ye, X Yang, S Kang, Y He, W Zhang, L Huang, M Jiang, W Zhang, Y Shi, ...",
+    "venue": "Proceedings of the IEEE/CVF conference on computer vision and pattern … , 2021",
+    "year": 2021,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:2osOgNQ5qMEC",
+    "type": "paper"
+  },
+  {
+    "title": "Roadside sensing system based on vehicle infrastructure cooperation, and method for controlling vehicle thereof",
+    "authors": "X Hu, T Xia, C Li, C Tan, S Tao, H Cao, Y Shi, L Fang, H Wang, J TAO",
+    "venue": "US Patent App. 16/557,690 , 2020",
+    "year": 2020,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:0EnyYjriUFMC",
+    "type": "patent"
+  },
+  {
+    "title": "Monocular 3d object detection via feature domain adaptation",
+    "authors": "X Ye, L Du, Y Shi, Y Li, X Tan, J Feng, E Ding, S Wen",
+    "venue": "European Conference on Computer Vision, 17-34 , 2020",
+    "year": 2020,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:UeHWp8X0CEIC",
+    "type": "paper"
+  },
+  {
+    "title": "Method, apparatus, computing device, and medium for upgrading map of self-driving vehicle",
+    "authors": "Y Shi, S Tao, H Wang, J TAO",
+    "venue": "US Patent App. 16/549,427 , 2020",
+    "year": 2020,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:ufrVoPGSRksC",
+    "type": "patent"
+  },
+  {
+    "title": "High-precision map generation method, device and computer device",
+    "authors": "Y Shi, S Tao, H Cao, H Wang, J TAO",
+    "venue": "US Patent App. 16/549,393 , 2020",
+    "year": 2020,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:3fE2CSJIrl8C",
+    "type": "patent"
+  },
+  {
+    "title": "Generalized sidelobe canceler beamforming applied to medical ultrasound imaging",
+    "authors": "J Li, X Chen, Y Wang, Y Shi, D Yu",
+    "venue": "Acoustical Physics 63 (2), 229-236 , 2017",
+    "year": 2017,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&citation_for_view=KlHuj2QAAAAJ:d1gkVwhDpl0C",
+    "type": "paper"
+  },
+  {
+    "title": "Supplementary Materials for TransIFF: An Instance-Level Feature Fusion Framework for Vehicle-Infrastructure Cooperative 3D Detection with Transformers",
+    "authors": "Z Chen, Y Shi, J Jia",
+    "venue": "",
+    "year": 0,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:IWHjjKOFINEC",
+    "type": "paper"
+  },
+  {
+    "title": "1 Detailed calculation process of the normalized depth",
+    "authors": "J Jia, Z Li, Y Shi",
+    "venue": "",
+    "year": 0,
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:dhFuZR0502QC",
+    "type": "paper"
+  }
+]

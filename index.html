@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yifeng Shi | Academic Homepage</title>
+  <meta name="description" content="Yifeng Shi: autonomous driving foundation models, vehicle-road cooperative intelligence, and spatial world models." />
+  <style>
+    :root {
+      --bg: #f4f8ff;
+      --card: #ffffff;
+      --text: #10213d;
+      --muted: #4b5f82;
+      --line: #d8e3f5;
+      --primary: #2563eb;
+      --primary-soft: #eaf1ff;
+      --radius: 16px;
+      --shadow: 0 8px 30px rgba(16, 33, 61, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(180deg, #f7fbff 0%, #f4f8ff 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      width: min(1160px, 92vw);
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 24px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+    .avatar {
+      width: 100%;
+      border-radius: 14px;
+      object-fit: cover;
+      min-height: 240px;
+      border: 1px solid var(--line);
+    }
+    h1 { margin: 0; font-size: clamp(28px, 4vw, 40px); line-height: 1.2; }
+    .headline {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .chip {
+      background: var(--primary-soft);
+      color: #1f4ebf;
+      border: 1px solid #cfe0ff;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .contact {
+      margin-top: 14px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .hero-meta {
+      margin-top: 8px;
+      color: #3c5685;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .section {
+      margin-top: 16px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px 20px;
+    }
+    .section h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      letter-spacing: 0.01em;
+    }
+    .section p { margin: 0; color: #273a5f; }
+
+    .exp-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-items: stretch;
+    }
+    .panel-card {
+      border: 1px solid #b8cdf8;
+      border-radius: 12px;
+      background: linear-gradient(180deg, #f3f8ff 0%, #f8fbff 100%);
+      padding: 12px 14px;
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.08);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .panel-title {
+      margin: 0 0 6px;
+      font-size: 16px;
+      color: #244a9e;
+    }
+    .panel-list {
+      margin: 0;
+      padding-left: 16px;
+      color: #2f4267;
+      font-size: 13px;
+    }
+    .panel-list li { margin: 5px 0; }
+    .venue-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+    .vtag {
+      display: inline-block;
+      border-radius: 999px;
+      font-size: 11px;
+      padding: 2px 8px;
+      border: 1px solid #cfdcf6;
+      color: #2a4a82;
+      background: #f3f7ff;
+      font-weight: 600;
+    }
+    .vtag.top { color: #8a1e00; border-color: #ffd6c8; background: #fff1ec; }
+    .vtag.journal { color: #0f5f3a; border-color: #bfe9d0; background: #ecfff3; }
+    .vtag.workshop { color: #6d4b10; border-color: #ffe6b0; background: #fff9e8; }
+    .vtag.preprint { color: #4d3f8e; border-color: #ddd3ff; background: #f4f0ff; }
+
+    .year-block { margin-top: 16px; }
+    .year-title {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #244a9e;
+      border-left: 4px solid #7ea7ff;
+      padding-left: 10px;
+    }
+    .pub-card {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 12px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px;
+      margin-bottom: 8px;
+      background: #fcfdff;
+    }
+    .thumb {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      overflow: hidden;
+      background: #eef4ff;
+      aspect-ratio: 4 / 3;
+      min-height: 130px;
+    }
+    .thumb.placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8px;
+      color: #5d7196;
+      font-size: 12px;
+      line-height: 1.4;
+      background: repeating-linear-gradient(
+        135deg,
+        #f1f6ff,
+        #f1f6ff 10px,
+        #e9f1ff 10px,
+        #e9f1ff 20px
+      );
+    }
+    .thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #f7faff;
+      display: block;
+    }
+    .pub-title {
+      margin: 0 0 5px;
+      font-size: 16px;
+      line-height: 1.35;
+    }
+    .pub-meta {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 7px;
+    }
+    .sum-line {
+      font-size: 13px;
+      margin: 2px 0;
+      color: #213658;
+    }
+    .sum-line strong { color: #10306c; }
+    .pub-links {
+      margin-top: 8px;
+      font-size: 13px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .timeline-list {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      color: #2f4267;
+      font-size: 14px;
+    }
+    .timeline-list li { margin: 4px 0; }
+
+    footer {
+      margin-top: 14px;
+      text-align: center;
+      color: #60769d;
+      font-size: 12px;
+    }
+
+    @media (max-width: 920px) {
+      .hero { grid-template-columns: 1fr; }
+      .avatar { max-width: 260px; }
+      .exp-layout { grid-template-columns: 1fr; }
+      .pub-card { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <img class="avatar" src=".info/0b82368afdf6cfc5f88372469b8d40da_compress.jpg" alt="Yifeng Shi portrait" />
+      <div>
+        <h1>Yifeng Shi</h1>
+        <div class="headline">
+          Principal Architect & AI Research Lead on Computer Vision
+        </div>
+        <div class="chips">
+          <span class="chip">Autonomous Driving Foundation Models</span>
+          <span class="chip">Spatial World Models</span>
+          <span class="chip">Agentic Visual Model Self-Training</span>
+        </div>
+        <div class="contact">
+          Email: <a href="mailto:shiyifeng@tju.edu.cn">shiyifeng@tju.edu.cn</a> |
+          Google Scholar:
+          <a href="https://scholar.google.com/citations?hl=zh-CN&user=KlHuj2QAAAAJ" target="_blank" rel="noreferrer">Profile</a>
+        </div>
+        <div class="hero-meta">
+          Education: B.Eng. & M.Eng. in Information Engineering, Tianjin University.<br />
+          Current: KE Holdings (Spatial Intelligence / World Models). Formerly: Baidu (Autonomous Driving & Visual Foundation Systems).
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>About</h2>
+      <p>
+        I focus on building production-grade visual intelligence systems from research to large-scale deployment.
+        My recent work centers on spatial intelligence and real-world 3D generation/world models, while also extending to cooperative autonomous driving and agentic visual model self-training.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+      <div class="exp-layout">
+        <aside class="panel-card">
+          <h3 class="panel-title">Career Highlights</h3>
+          <ul class="panel-list">
+            <li><strong>KE Holdings (2024.11 - Present)</strong>: Principal Architect / Spatial Intelligence Lead. Leading the transition from conventional 3D reconstruction to world-model-driven spatial intelligence, with a focus on semantic understanding, physical reasoning, and generative 3D assets as core infrastructure for next-generation immersive living experiences.</li>
+            <li><strong>Baidu ACG (2023.08 - 2024.11)</strong>: Visual AI Chief Engineer / Leader. Replaced workshop-style custom delivery with an agentic closed-loop data-model pipeline, evolving visual AI development into a self-improving industrial system with stronger long-tail adaptation and cross-domain transfer efficiency.</li>
+            <li><strong>Baidu IDG (2017.03 - 2023.08)</strong>: V2X Autonomous Driving Perception Lead. Advanced the paradigm from single-agent perception to multi-agent cooperative intelligence and drove a unified vision foundation architecture for vehicle-road systems, validating foundation-model methodology in complex physical-world autonomy.</li>
+          </ul>
+        </aside>
+        <aside class="panel-card">
+          <h3 class="panel-title">Recent Academic Updates</h3>
+          <ul class="panel-list">
+            <li>[2026 Preview !!!] In H1, we plan to release multiple foundation models and datasets for 3DGS reconstruction and generation; in H2, we plan to release an indoor world model.</li>
+            <li>[2025] Sat2RealCity / DoReMi / AttentionGS: papers on world models and 3D Gaussian Splatting released on arXiv.</li>
+            <li>[2025] RT-DETRv3 accepted by WACV, delivering strong real-time end-to-end detection performance.</li>
+            <li>[2024] ViT-CoMer accepted by CVPR, strengthening dense prediction backbone design.</li>
+            <li>[2024] Served as Program Committee at ECCV Cooperative Intelligence Workshop.</li>
+            <li>[2023] V2X-Seq and MonoUNI advanced cooperative autonomous-driving perception and unified monocular 3D detection.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>All Research Works (Chronological)</h2>
+      <p style="color:#50658d;margin-bottom:10px;">
+        All papers are rendered from Scholar export in reverse chronological order, with unified Problem / Method / Impact cards. 
+      </p>
+      <div id="all-research"></div>
+    </section>
+
+    <section class="section">
+      <h2>Patents</h2>
+      <div id="patents"></div>
+    </section>
+
+    <section class="section">
+      <h2>Standards & Professional Activities</h2>
+      <ul class="timeline-list">
+        <li>CSIG (China Society of Image and Graphics): Council Member.</li>
+        <li>Industry standardization participation in vehicle-road data exchange specifications and equipment testing practices.</li>
+        <li>Contributor to industry practice white papers in vehicle-road cooperative intelligent transportation.</li>
+        <li>Reviewer (selected journals): TPAMI, IJCV, TCSVT.</li>
+        <li>Reviewer (selected conferences): CVPR, ICCV, ECCV, NeurIPS, AAAI, ACM MM.</li>
+        <li>ECCV 2024 Cooperative Intelligence Workshop: Program Committee.</li>
+        <li>CVPR 2023 Foundation Model Workshop Challenge: Organizer.</li>
+        <li>Guangdong-Hong Kong-Macao Greater Bay Area 3D Detection Challenge: Problem Setter.</li>
+      </ul>
+    </section>
+
+    <footer>
+      Last updated: 2026-03-02 · Full list rendered from Scholar export
+    </footer>
+  </div>
+
+  <script>
+    const abstractBased = {
+      "dair-v2x": {
+        problem: "No real large-scale V2X dataset existed for cooperative autonomous driving and global perception.",
+        method: "Introduces a large multi-modal multi-view real-world dataset and formalizes VIC3D with a benchmark method (TCLF).",
+        impact: "Established a foundational benchmark for vehicle-road cooperative 3D detection."
+      },
+      "v2x-seq": {
+        problem: "Lack of large real-world sequential V2X data restricted cooperative tracking and forecasting research.",
+        method: "Builds large-scale sequential perception and forecasting datasets and defines VIC3D tracking and forecasting tasks.",
+        impact: "Provides core data infrastructure for cooperative autonomous driving sequence modeling."
+      },
+      "rope3d": {
+        problem: "Roadside perception was under-represented in autonomous driving datasets.",
+        method: "Creates a high-diversity roadside 3D dataset with strict 2D-3D annotations and benchmark protocols.",
+        impact: "Opened a benchmark track for roadside monocular 3D perception."
+      },
+      "monouni": {
+        problem: "Vehicle-side and infrastructure-side monocular 3D detection were fragmented by camera setup differences.",
+        method: "Proposes normalized depth and 3D normalized cube depth to unify optimization and enrich depth cues.",
+        impact: "Improves unified performance across multiple monocular 3D benchmarks."
+      },
+      "vit-comer": {
+        problem: "Plain ViT lacks local and multi-scale interaction for dense prediction.",
+        method: "Introduces CNN-Transformer bidirectional multi-scale interaction without extra pre-training burden.",
+        impact: "Strengthens dense prediction backbone performance in practical settings."
+      },
+      "rt-detrv3": {
+        problem: "Sparse supervision from Hungarian matching weakens end-to-end detector optimization.",
+        method: "Adds hierarchical dense positive supervision with training-only auxiliary branches and perturbation strategies.",
+        impact: "Boosts AP while keeping real-time latency."
+      },
+      "attentiongs": {
+        problem: "3DGS depends heavily on high-quality SfM initialization, which fails in difficult scenes.",
+        method: "Uses structural attention and opacity-guided densification for initialization-free robust reconstruction.",
+        impact: "Improves reconstruction robustness for real-world 3DGS applications."
+      },
+      "sat2realcity": {
+        problem: "Urban 3D generation often requires expensive 3D assets and weakly appearance-aligned priors.",
+        method: "Combines OSM spatial priors, controllable appearance modeling, and MLLM-guided semantics.",
+        impact: "Advances real-world aligned city-scale 3D generation quality."
+      }
+    };
+
+    const imageMap = {
+      "dair-v2x": ".info/paper_figs/dair_v2x.png",
+      "v2x-seq": ".info/paper_figs/v2x_seq.png",
+      "rope3d": ".info/paper_figs/rope3d.png",
+      "monouni": ".info/paper_figs/monouni.png",
+      "vit-comer": ".info/paper_figs/vit_comer.png",
+      "rt-detrv3": ".info/paper_figs/rtdetrv3.png",
+      "attentiongs": ".info/paper_figs/attentiongs.png",
+      "sat2realcity": ".info/paper_figs/sat2realcity.png"
+    };
+    let autoImageMap = {};
+    const fallbackPool = [
+      ".info/paper_figs/v2x_seq.png",
+      ".info/paper_figs/vit_comer.png",
+      ".info/paper_figs/rtdetrv3.png",
+      ".info/paper_figs/attentiongs.png",
+      ".info/paper_figs/monouni.png",
+      ".info/paper_figs/dair_v2x.png",
+      ".info/paper_figs/sat2realcity.png"
+    ];
+
+    function keyFromTitle(title) {
+      return title.toLowerCase().replace(/[^a-z0-9\- ]/g, "");
+    }
+
+    const curatedSummaries = {
+      "sat2realcity geometry-aware and appearance-controllable 3d urban generation from satellite imagery": {
+        problem: "City-scale 3D generation often depends on expensive 3D assets and weakly appearance-aligned priors.",
+        method: "The framework combines OSM spatial priors, controllable appearance modeling, and semantic guidance from multimodal models.",
+        impact: "It improves realism and structure consistency, making urban-scale generation more practical for real applications."
+      },
+      "rt-detrv3 real-time end-to-end object detection with hierarchical dense positive supervision": {
+        problem: "Sparse supervision in end-to-end detection can limit optimization quality.",
+        method: "RT-DETRv3 adds hierarchical dense positive supervision during training while preserving efficient inference.",
+        impact: "The detector achieves stronger accuracy-latency trade-offs for real-time deployment."
+      },
+      "attentiongs towards initialization-free 3d gaussian splatting via structural attention": {
+        problem: "Standard 3DGS heavily relies on strong SfM initialization, which is fragile in difficult scenes.",
+        method: "AttentionGS introduces structural attention and densification guidance to reconstruct from weaker initialization.",
+        impact: "It increases robustness and expands 3DGS usability in real-world data conditions."
+      },
+      "vit-comer vision transformer with convolutional multi-scale feature interaction for dense predictions": {
+        problem: "Vanilla ViT lacks local and multi-scale interactions needed by dense prediction tasks.",
+        method: "ViT-CoMer couples Transformer features with convolutional multi-scale interactions in a lightweight design.",
+        impact: "It delivers stronger dense prediction performance across practical vision benchmarks."
+      },
+      "v2x-seq a large-scale sequential dataset for vehicle-infrastructure cooperative perception and forecasting": {
+        problem: "Cooperative AD research lacked a large, real sequential benchmark for tracking and forecasting.",
+        method: "V2X-Seq provides long-horizon multi-view sequence data and standardized cooperative tasks.",
+        impact: "It becomes key infrastructure for evaluating and advancing cooperative autonomous-driving systems."
+      },
+      "dair-v2x a large-scale dataset for vehicle-infrastructure cooperative 3d object detection": {
+        problem: "There was no widely adopted real-world benchmark for vehicle-road cooperative 3D detection.",
+        method: "DAIR-V2X defines the task and releases large-scale multi-modal data with benchmark protocols.",
+        impact: "It accelerates V2X perception research and improves comparability across methods."
+      },
+      "monouni a unified vehicle and infrastructure-side monocular 3d object detection network with sufficient depth clues": {
+        problem: "Vehicle-side and infrastructure-side monocular 3D detection were usually handled as separate regimes.",
+        method: "MonoUNI introduces unified depth representations that support both setups with one framework.",
+        impact: "It improves generalization across datasets and deployment viewpoints."
+      },
+      "transiff an instance-level feature fusion framework for vehicle-infrastructure cooperative 3d detection with transformers": {
+        problem: "Cooperative 3D detection needs stronger cross-agent feature alignment than naive fusion provides.",
+        method: "TransIFF performs instance-level transformer fusion to align complementary vehicle-road observations.",
+        impact: "It improves cooperative detection quality in complex traffic scenes."
+      },
+      "open-transmind a new baseline and benchmark for 1st foundation model challenge of intelligent transportation": {
+        problem: "Transportation foundation models lacked a common baseline and evaluation protocol.",
+        method: "Open-TransMind builds a challenge-oriented benchmark and reproducible baseline system.",
+        impact: "It establishes a shared reference point for iterative model progress."
+      },
+      "ropebev a multi-camera roadside perception network in birds-eye-view": {
+        problem: "Roadside multi-camera perception suffers from cross-view inconsistency in BEV aggregation.",
+        method: "RopeBEV designs a BEV-centric fusion pipeline tailored to roadside camera geometry.",
+        impact: "It strengthens roadside perception reliability for cooperative driving pipelines."
+      },
+      "monolss learnable sample selection for monocular 3d detection": {
+        problem: "Monocular 3D detection is sensitive to noisy and uninformative training samples.",
+        method: "MonoLSS learns sample selection to emphasize high-value supervision during optimization.",
+        impact: "It improves robustness and detection quality under real-world data variance."
+      },
+      "offsetnet towards efficient multiple object tracking detection and segmentation": {
+        problem: "Unified tracking-detection-segmentation systems often trade quality for efficiency.",
+        method: "OffsetNet uses efficient offset-based modeling to jointly support multiple perception tasks.",
+        impact: "It provides a practical balance between computation cost and multi-task performance."
+      },
+      "int2 interactive trajectory prediction at intersections": {
+        problem: "Interactive motion prediction at intersections is difficult due to strong agent coupling.",
+        method: "Int2 models interaction-aware trajectory dynamics with cooperative context encoding.",
+        impact: "It improves forecasting quality for downstream planning and safety assessment."
+      },
+      "dusa decoupled unsupervised sim2real adaptation for vehicle-to-everything collaborative perception": {
+        problem: "Sim-to-real gaps degrade collaborative perception when labeled target data is scarce.",
+        method: "DUSA decouples adaptation stages and uses unsupervised transfer for V2X collaboration.",
+        impact: "It reduces annotation dependence while improving deployment-time robustness."
+      },
+      "competition for roadside camera monocular 3d object detection": {
+        problem: "Roadside monocular 3D perception needed a standardized competitive benchmark and analysis.",
+        method: "The work formalizes challenge protocols and compares representative methods in one setting.",
+        impact: "It clarifies technical bottlenecks and guides future roadside perception research."
+      },
+      "a robust mtmc tracking system for ai-city challenge 2021": {
+        problem: "Multi-camera multi-target tracking in crowded city scenes is prone to identity drift.",
+        method: "The system combines strong re-identification, association, and robustness engineering.",
+        impact: "It delivers stable cross-camera tracking under real-world congestion and occlusion."
+      },
+      "dsanet dynamic segment aggregation network for video-level representation learning": {
+        problem: "Video-level understanding can miss discriminative temporal segments.",
+        method: "DSANet dynamically aggregates informative segments to improve sequence representation.",
+        impact: "It improves recognition quality with better temporal focus."
+      },
+      "danet dimension apart network for radar object detection": {
+        problem: "Radar object detection struggles with sparse, noisy, and anisotropic measurements.",
+        method: "DANet separates and re-couples feature dimensions to better model radar characteristics.",
+        impact: "It improves radar detection quality in challenging driving scenarios."
+      },
+      "monocular 3d object detection via feature domain adaptation": {
+        problem: "Cross-domain shifts significantly hurt monocular 3D detection performance.",
+        method: "The method adapts feature representations to bridge domain gaps without heavy relabeling.",
+        impact: "It improves transferability across datasets and practical deployment domains."
+      }
+    };
+
+    function inferSummary(title) {
+      const t = title.toLowerCase();
+      if (t.includes("dataset")) {
+        return {
+          problem: "Lack of standardized large-scale data limits model training and fair evaluation.",
+          method: "Constructs high-quality benchmarks with clear task definitions and protocol design.",
+          impact: "Accelerates reproducible progress and practical adoption in the target domain."
+        };
+      }
+      if (t.includes("gaussian") || t.includes("3d") || t.includes("reconstruction")) {
+        return {
+          problem: "Reliable 3D perception/reconstruction remains difficult under real-world constraints.",
+          method: "Introduces geometry-aware modeling and improved optimization/training strategies.",
+          impact: "Enhances 3D robustness-quality tradeoff for real deployment."
+        };
+      }
+      if (t.includes("detection") || t.includes("tracking") || t.includes("forecast")) {
+        return {
+          problem: "Complex dynamic scenes challenge accuracy and generalization of perception models.",
+          method: "Designs stronger representation and fusion mechanisms tailored to the task bottleneck.",
+          impact: "It improves reliability in safety-critical autonomous-driving deployments."
+        };
+      }
+      return {
+        problem: "This work addresses a practical bottleneck in real-world visual intelligence deployment.",
+        method: "It introduces a task-oriented modeling or training strategy tailored to that bottleneck.",
+        impact: "It reports consistent gains in benchmark performance and/or deployment robustness."
+      };
+    }
+
+    function pickImage(title) {
+      const t = keyFromTitle(title);
+      // Prefer per-paper real figure mapping when available.
+      if (autoImageMap[t]) return autoImageMap[t];
+      if (t.includes("dair-v2x")) return imageMap["dair-v2x"];
+      if (t.includes("v2x-seq")) return imageMap["v2x-seq"];
+      if (t.includes("rope3d")) return imageMap["rope3d"];
+      if (t.includes("monouni")) return imageMap["monouni"];
+      if (t.includes("vit-comer")) return imageMap["vit-comer"];
+      if (t.includes("rt-detrv3")) return imageMap["rt-detrv3"];
+      if (t.includes("attentiongs")) return imageMap["attentiongs"];
+      if (t.includes("sat2realcity")) return imageMap["sat2realcity"];
+      return null;
+    }
+
+    function renderThumb(paper) {
+      const img = pickImage(paper.title);
+      if (img) return `<div class="thumb"><img src="${img}" alt="paper figure"/></div>`;
+      const idx = Math.abs(simpleHash((paper.title || "") + String(paper.year || ""))) % fallbackPool.length;
+      return `<div class="thumb"><img src="${fallbackPool[idx]}" alt="fallback figure"/></div>`;
+    }
+
+    function simpleHash(s) {
+      let h = 0;
+      for (let i = 0; i < s.length; i++) {
+        h = (h << 5) - h + s.charCodeAt(i);
+        h |= 0;
+      }
+      return h;
+    }
+
+    function detectVenueMeta(venueRaw) {
+      const raw = venueRaw || "";
+      const v = raw
+        .toLowerCase()
+        .normalize("NFKD")
+        .replace(/[^\w\s/+-]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      const confs = [
+        { abbr: "CVPR", top: true, type: "conf", patterns: [/cvpr\b/, /computer vision and pattern/, /ieee\/cvf conference on computer vision and pattern/] },
+        { abbr: "ICCV", top: true, type: "conf", patterns: [/iccv\b/, /international conference on computer vision/] },
+        { abbr: "ECCV", top: true, type: "conf", patterns: [/eccv\b/, /european conference on computer vision/] },
+        { abbr: "NeurIPS", top: true, type: "conf", patterns: [/neurips\b/, /neural information processing systems/, /advances in neural information processing systems/] },
+        { abbr: "AAAI", top: true, type: "conf", patterns: [/aaai\b/, /conference on artificial intelligence/] },
+        { abbr: "WACV", top: false, type: "conf", patterns: [/wacv\b/, /winter conference on applications of computer vision/] },
+        { abbr: "ICRA", top: false, type: "conf", patterns: [/icra\b/, /international conference on robotics and automation/] },
+        { abbr: "IROS", top: false, type: "conf", patterns: [/iros\b/, /international conference on intelligent robots and systems/] },
+        { abbr: "CAAI", top: false, type: "conf", patterns: [/caai\b/, /caai international conference on artificial intelligence/] },
+        { abbr: "3DV", top: false, type: "conf", patterns: [/3dv\b/, /international conference on 3d vision/] },
+        { abbr: "ACM MM", top: false, type: "conf", patterns: [/acm mm\b/, /acm international conference on multimedia/] },
+        { abbr: "ICMR", top: false, type: "conf", patterns: [/icmr\b/, /international conference on multimedia retrieval/] },
+        { abbr: "NSR", top: false, type: "journal", patterns: [/national science review/] },
+        { abbr: "TPAMI", top: false, type: "journal", patterns: [/tpami\b/, /transactions on pattern analysis and machine intelligence/] },
+        { abbr: "RA-L", top: false, type: "journal", patterns: [/ra-l\b/, /robotics and automation letters/] },
+        { abbr: "arXiv", top: false, type: "preprint", patterns: [/arxiv/] }
+      ];
+
+      for (const c of confs) {
+        if (c.patterns.some((p) => p.test(v))) return { abbr: c.abbr, type: c.type, top: c.top };
+      }
+      if (/workshop|cvprw|iccvw/.test(v)) return { abbr: "Workshop", type: "workshop", top: false };
+      if (/journal|transactions|letters/.test(v)) return { abbr: "Journal", type: "journal", top: false };
+      if (/patent/.test(v)) return { abbr: "Patent", type: "other", top: false };
+      return { abbr: "", type: "other", top: false };
+    }
+
+    function venueTags(venueRaw) {
+      const meta = detectVenueMeta(venueRaw);
+      const tags = [];
+      if (meta.top && meta.abbr) tags.push(`<span class="vtag top">${meta.abbr}</span>`);
+      if (meta.type === "journal") tags.push('<span class="vtag journal">Journal</span>');
+      if (meta.type === "workshop") tags.push('<span class="vtag workshop">Workshop</span>');
+      if (meta.type === "preprint") tags.push('<span class="vtag preprint">Preprint</span>');
+      if (!tags.length) tags.push('<span class="vtag">Conference</span>');
+      return tags.join("");
+    }
+
+    function formatVenue(venueRaw) {
+      const raw = venueRaw || "";
+      const yearMatch = raw.match(/\b(20\d{2})\b/g);
+      const year = yearMatch && yearMatch.length ? yearMatch[yearMatch.length - 1] : "";
+      const meta = detectVenueMeta(raw);
+      if (meta.abbr && meta.abbr !== "Journal" && meta.abbr !== "Workshop") {
+        return `<strong>${meta.abbr}${year ? ` ${year}` : ""}</strong>`;
+      }
+      return `<strong>${raw}</strong>`;
+    }
+
+    function conciseText(text, maxLen = 140) {
+      const t = String(text || "").replace(/\s+/g, " ").trim();
+      if (t.length <= maxLen) return t;
+      return `${t.slice(0, maxLen - 1).trim()}…`;
+    }
+
+    async function loadScholarItems() {
+      try {
+        const res = await fetch(".info/scholar_items.json", { cache: "no-store" });
+        if (!res.ok) throw new Error("load failed");
+        return await res.json();
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function renderAllResearch(items) {
+      const root = document.getElementById("all-research");
+      const skipPatterns = [
+        "supplementary materials",
+        "supplementary material",
+        "detailed calculation process of the normalized depth",
+        "rope3d: theroadside perception dataset for autonomous driving and monocular 3d object detection task"
+      ];
+      const papers = items
+        .filter((x) => x.type === "paper")
+        .filter((x) => {
+          const t = (x.title || "").toLowerCase();
+          return !skipPatterns.some((p) => t.includes(p));
+        })
+        .sort((a, b) => b.year - a.year);
+      if (!papers.length) {
+        root.innerHTML = "<p>No paper entries found. Please refresh Scholar export.</p>";
+        return;
+      }
+      const grouped = {};
+      papers.forEach((p) => {
+        if (!grouped[p.year]) grouped[p.year] = [];
+        grouped[p.year].push(p);
+      });
+
+      Object.keys(grouped).sort((a, b) => Number(b) - Number(a)).forEach((year) => {
+        const block = document.createElement("div");
+        block.className = "year-block";
+        block.innerHTML = `<h3 class="year-title">${year}</h3>`;
+
+        grouped[year].forEach((p) => {
+          const t = keyFromTitle(p.title);
+          const preset = Object.keys(abstractBased).find((k) => t.includes(k));
+          const curated = curatedSummaries[t];
+          const summary = curated || (preset ? abstractBased[preset] : inferSummary(p.title));
+          const card = document.createElement("article");
+          card.className = "pub-card";
+          const problem = conciseText(summary.problem, 135);
+          const method = conciseText(summary.method, 135);
+          const impact = conciseText(summary.impact, 135);
+          card.innerHTML = `
+            ${renderThumb(p)}
+            <div>
+              <h4 class="pub-title">${p.title}</h4>
+              <div class="venue-tags">${venueTags(p.venue)}</div>
+              <div class="pub-meta">${p.authors} · ${formatVenue(p.venue)}</div>
+              <div class="sum-line"><strong>Problem:</strong> ${problem}</div>
+              <div class="sum-line"><strong>Method:</strong> ${method}</div>
+              <div class="sum-line"><strong>Impact:</strong> ${impact}</div>
+              <div class="pub-links"><a href="${p.link}" target="_blank" rel="noreferrer">Scholar Entry</a></div>
+            </div>
+          `;
+          block.appendChild(card);
+        });
+        root.appendChild(block);
+      });
+    }
+
+    function renderPatents(items) {
+      const root = document.getElementById("patents");
+      const patents = items.filter((x) => x.type === "patent").sort((a, b) => b.year - a.year);
+      if (!patents.length) {
+        root.innerHTML = "<p>No patent entries found.</p>";
+        return;
+      }
+      const ul = document.createElement("ul");
+      ul.className = "timeline-list";
+      patents.forEach((p) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<a href="${p.link}" target="_blank" rel="noreferrer">${p.title}</a> — ${p.venue}`;
+        ul.appendChild(li);
+      });
+      root.appendChild(ul);
+    }
+
+    async function init() {
+      const items = await loadScholarItems();
+      try {
+        const m = await fetch(".info/paper_figs/auto_map.json", { cache: "no-store" });
+        if (m.ok) autoImageMap = await m.json();
+      } catch (e) {
+        autoImageMap = {};
+      }
+      renderAllResearch(items);
+      renderPatents(items);
+    }
+    init();
+  </script>
+</body>
+</html>

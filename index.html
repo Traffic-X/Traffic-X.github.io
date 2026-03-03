@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="./" />
   <title>Yifeng Shi | Academic Homepage</title>
   <meta name="description" content="Yifeng Shi: autonomous driving foundation models, vehicle-road cooperative intelligence, and spatial world models." />
   <style>
@@ -631,12 +632,17 @@
       return `${t.slice(0, maxLen - 1).trim()}…`;
     }
 
+    const DATA_DIR = "info";
     async function loadScholarItems() {
       try {
-        const res = await fetch("info/scholar_items.json", { cache: "no-store" });
+        const res = await fetch(DATA_DIR + "/scholar_items.json", { cache: "no-store" });
         if (!res.ok) throw new Error("load failed");
         return await res.json();
       } catch (e) {
+        if (window.location.protocol === "file:") {
+          const root = document.getElementById("all-research");
+          if (root) root.innerHTML = "<p>Please open this page via a local server (e.g. <code>python -m http.server 8000</code>) so data can load. Do not open the HTML file directly.</p>";
+        }
         return [];
       }
     }
@@ -719,7 +725,7 @@
     async function init() {
       const items = await loadScholarItems();
       try {
-        const m = await fetch("info/paper_figs/auto_map.json", { cache: "no-store" });
+        const m = await fetch(DATA_DIR + "/paper_figs/auto_map.json", { cache: "no-store" });
         if (m.ok) autoImageMap = await m.json();
       } catch (e) {
         autoImageMap = {};

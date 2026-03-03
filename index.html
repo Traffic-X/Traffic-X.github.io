@@ -250,7 +250,7 @@
 <body>
   <div class="wrap">
     <section class="hero">
-      <img class="avatar" src=".info/0b82368afdf6cfc5f88372469b8d40da_compress.jpg" alt="Yifeng Shi portrait" />
+      <img class="avatar" src="info/0b82368afdf6cfc5f88372469b8d40da_compress.jpg" alt="Yifeng Shi portrait" />
       <div>
         <h1>Yifeng Shi</h1>
         <div class="headline">
@@ -383,24 +383,24 @@
     };
 
     const imageMap = {
-      "dair-v2x": ".info/paper_figs/dair_v2x.png",
-      "v2x-seq": ".info/paper_figs/v2x_seq.png",
-      "rope3d": ".info/paper_figs/rope3d.png",
-      "monouni": ".info/paper_figs/monouni.png",
-      "vit-comer": ".info/paper_figs/vit_comer.png",
-      "rt-detrv3": ".info/paper_figs/rtdetrv3.png",
-      "attentiongs": ".info/paper_figs/attentiongs.png",
-      "sat2realcity": ".info/paper_figs/sat2realcity.png"
+      "dair-v2x": "info/paper_figs/dair_v2x.png",
+      "v2x-seq": "info/paper_figs/v2x_seq.png",
+      "rope3d": "info/paper_figs/rope3d.png",
+      "monouni": "info/paper_figs/monouni.png",
+      "vit-comer": "info/paper_figs/vit_comer.png",
+      "rt-detrv3": "info/paper_figs/rtdetrv3.png",
+      "attentiongs": "info/paper_figs/attentiongs.png",
+      "sat2realcity": "info/paper_figs/sat2realcity.png"
     };
     let autoImageMap = {};
     const fallbackPool = [
-      ".info/paper_figs/v2x_seq.png",
-      ".info/paper_figs/vit_comer.png",
-      ".info/paper_figs/rtdetrv3.png",
-      ".info/paper_figs/attentiongs.png",
-      ".info/paper_figs/monouni.png",
-      ".info/paper_figs/dair_v2x.png",
-      ".info/paper_figs/sat2realcity.png"
+      "info/paper_figs/v2x_seq.png",
+      "info/paper_figs/vit_comer.png",
+      "info/paper_figs/rtdetrv3.png",
+      "info/paper_figs/attentiongs.png",
+      "info/paper_figs/monouni.png",
+      "info/paper_figs/dair_v2x.png",
+      "info/paper_figs/sat2realcity.png"
     ];
 
     function keyFromTitle(title) {
@@ -633,7 +633,7 @@
 
     async function loadScholarItems() {
       try {
-        const res = await fetch(".info/scholar_items.json", { cache: "no-store" });
+        const res = await fetch("info/scholar_items.json", { cache: "no-store" });
         if (!res.ok) throw new Error("load failed");
         return await res.json();
       } catch (e) {
@@ -719,7 +719,7 @@
     async function init() {
       const items = await loadScholarItems();
       try {
-        const m = await fetch(".info/paper_figs/auto_map.json", { cache: "no-store" });
+        const m = await fetch("info/paper_figs/auto_map.json", { cache: "no-store" });
         if (m.ok) autoImageMap = await m.json();
       } catch (e) {
         autoImageMap = {};

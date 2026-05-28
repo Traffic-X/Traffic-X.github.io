@@ -1,4 +1,8 @@
 {
+  "panoworld a generative spatial world model for consistent whole-house panorama synthesis": "info/paper_figs/auto/paper_2026_panoworld_fig1.jpg",
+  "adaptsplat adapting vision foundation models for feed-forward 3d gaussian splatting": "info/paper_figs/auto/paper_2026_adaptsplat_fig2.png",
+  "you only gaussian once controllable 3d gaussian splatting for ultra-densely sampled scenes": "info/paper_figs/auto/paper_2026_yogo_fig1.jpg",
+  "artifactworld scaling 3d gaussian splatting artifact restoration via video generation models": "info/paper_figs/auto/paper_2026_artifactworld_fig1.png",
   "sat2realcity geometry-aware and appearance-controllable 3d urban generation from satellite imagery": "info/paper_figs/auto/paper_real_01_161cc241.png",
   "rt-detrv3 real-time end-to-end object detection with hierarchical dense positive supervision": "info/paper_figs/auto/paper_real_02_15bb6764.png",
   "explore the lidar-camera dynamic adjustment fusion for 3d object detection": "info/paper_figs/auto/paper_real_03_2078d173.png",

@@ -1,5 +1,37 @@
 [
   {
+    "title": "PanoWorld: A Generative Spatial World Model for Consistent Whole-House Panorama Synthesis",
+    "authors": "Jinrang Jia, Zhenjia Li, Yijiang Hu, Yifeng Shi",
+    "venue": "arXiv preprint arXiv:2605.17916 , 2026",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2605.17916",
+    "type": "paper"
+  },
+  {
+    "title": "AdaptSplat: Adapting Vision Foundation Models for Feed-Forward 3D Gaussian Splatting",
+    "authors": "Mingwei Xing, Xinliang Wang, Yifeng Shi",
+    "venue": "arXiv preprint arXiv:2605.10239 , 2026",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2605.10239",
+    "type": "paper"
+  },
+  {
+    "title": "You Only Gaussian Once: Controllable 3D Gaussian Splatting for Ultra-Densely Sampled Scenes",
+    "authors": "Jinrang Jia, Zhenjia Li, Yifeng Shi",
+    "venue": "arXiv preprint arXiv:2604.21400 , 2026",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2604.21400",
+    "type": "paper"
+  },
+  {
+    "title": "ArtifactWorld: Scaling 3D Gaussian Splatting Artifact Restoration via Video Generation Models",
+    "authors": "Xinliang Wang, Yifeng Shi, Zhenyu Wu",
+    "venue": "arXiv preprint arXiv:2604.12251 , 2026",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2604.12251",
+    "type": "paper"
+  },
+  {
     "title": "Sat2RealCity: Geometry-Aware and Appearance-Controllable 3D Urban Generation from Satellite Imagery",
     "authors": "Y Kang, X Wang, Z Wu, Y Shi, H Zhu",
     "venue": "arXiv preprint arXiv:2511.11470 , 2025",

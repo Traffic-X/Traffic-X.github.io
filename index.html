@@ -5,25 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <base href="./" />
   <title>Yifeng Shi | Academic Homepage</title>
-  <meta name="description" content="Yifeng Shi: autonomous driving foundation models, vehicle-road cooperative intelligence, and spatial world models." />
+  <meta name="description" content="Yifeng Shi (Tianjin University): spatial world models, 3D generation, and autonomous driving foundation models." />
+  <link rel="canonical" href="https://traffic-x.github.io/" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Yifeng Shi | Academic Homepage" />
+  <meta property="og:description" content="Yifeng Shi: spatial world models, 3D generation, and autonomous driving foundation models." />
+  <meta property="og:url" content="https://traffic-x.github.io/" />
+  <meta property="og:image" content="https://traffic-x.github.io/info/0b82368afdf6cfc5f88372469b8d40da_compress.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Yifeng Shi | Academic Homepage" />
+  <meta name="twitter:description" content="Yifeng Shi: spatial world models, 3D generation, and autonomous driving foundation models." />
+  <meta name="twitter:image" content="https://traffic-x.github.io/info/0b82368afdf6cfc5f88372469b8d40da_compress.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yifeng Shi",
+      "url": "https://traffic-x.github.io/",
+      "image": "https://traffic-x.github.io/info/0b82368afdf6cfc5f88372469b8d40da_compress.jpg",
+      "email": "mailto:shiyifeng@tju.edu.cn",
+      "affiliation": [
+        { "@type": "Organization", "name": "Tianjin University" },
+        { "@type": "Organization", "name": "KE Holdings Inc." }
+      ],
+      "sameAs": [
+        "https://scholar.google.com/citations?hl=zh-CN&user=KlHuj2QAAAAJ"
+      ]
+    }
+  </script>
   <style>
     :root {
-      --bg: #f4f8ff;
-      --card: #ffffff;
-      --text: #10213d;
-      --muted: #4b5f82;
-      --line: #d8e3f5;
+      --bg: #f3f6ff;
+      --card: rgba(255, 255, 255, 0.94);
+      --text: #081225;
+      --muted: #3e5780;
+      --line: rgba(8, 18, 37, 0.10);
       --primary: #2563eb;
-      --primary-soft: #eaf1ff;
+      --primary-2: #7c3aed;
+      --primary-soft: rgba(37, 99, 235, 0.10);
+      --ring: rgba(37, 99, 235, 0.20);
       --radius: 16px;
-      --shadow: 0 8px 30px rgba(16, 33, 61, 0.08);
+      --shadow: 0 24px 70px rgba(8, 18, 37, 0.12);
     }
     * { box-sizing: border-box; }
     html, body {
       margin: 0;
       padding: 0;
-      font-family: "Inter", "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(180deg, #f7fbff 0%, #f4f8ff 100%);
+      font-family: "Manrope", ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+      background:
+        radial-gradient(1100px 620px at 10% 0%, rgba(37, 99, 235, 0.18), transparent 58%),
+        radial-gradient(900px 560px at 92% 10%, rgba(124, 58, 237, 0.12), transparent 60%),
+        radial-gradient(900px 520px at 50% 105%, rgba(37, 99, 235, 0.10), transparent 58%),
+        linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
       color: var(--text);
       line-height: 1.6;
     }
@@ -38,44 +75,64 @@
 
     .hero {
       display: grid;
-      grid-template-columns: 200px 1fr;
-      gap: 24px;
-      background: var(--card);
-      border: 1px solid var(--line);
+      grid-template-columns: 220px 1fr;
+      gap: 26px;
+      background:
+        radial-gradient(900px 420px at 6% 10%, rgba(37, 99, 235, 0.16), transparent 55%),
+        radial-gradient(640px 360px at 92% 18%, rgba(124, 58, 237, 0.10), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.84) 100%);
+      border: 1px solid rgba(18, 38, 74, 0.12);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 24px;
+      padding: 26px;
+      backdrop-filter: blur(10px);
     }
     .avatar {
       width: 100%;
-      border-radius: 14px;
+      border-radius: 16px;
       object-fit: cover;
       min-height: 240px;
-      border: 1px solid var(--line);
+      border: 1px solid rgba(18, 38, 74, 0.14);
+      box-shadow: 0 18px 46px rgba(10, 22, 48, 0.16);
     }
-    h1 { margin: 0; font-size: clamp(28px, 4vw, 40px); line-height: 1.2; }
+    h1 {
+      margin: 0;
+      font-family: "Source Serif 4", ui-serif, Georgia, serif;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.12;
+      letter-spacing: -0.01em;
+    }
+    h1 .name {
+      background: linear-gradient(90deg, var(--text) 0%, #173a7a 35%, var(--primary) 70%, var(--primary-2) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
     .headline {
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 16px;
+      margin-top: 10px;
+      color: #3a557f;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
     }
     .chips {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 14px;
+      gap: 10px;
+      margin-top: 16px;
     }
     .chip {
-      background: var(--primary-soft);
-      color: #1f4ebf;
-      border: 1px solid #cfe0ff;
+      background: rgba(255, 255, 255, 0.75);
+      color: #1d4ed8;
+      border: 1px solid rgba(29, 78, 216, 0.20);
       border-radius: 999px;
-      padding: 5px 10px;
+      padding: 6px 11px;
       font-size: 12px;
-      font-weight: 600;
+      font-weight: 800;
+      box-shadow: 0 10px 22px rgba(10, 22, 48, 0.06);
     }
     .contact {
-      margin-top: 14px;
+      margin-top: 16px;
       font-size: 14px;
       color: var(--muted);
     }
@@ -85,21 +142,71 @@
       font-size: 13px;
       line-height: 1.45;
     }
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: baseline;
+      margin: 4px 0;
+    }
+    .meta-label {
+      font-weight: 700;
+      color: #234a9b;
+      letter-spacing: 0.01em;
+    }
+    .meta-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 2px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      border: 1px solid #cfe0ff;
+      background: #f3f7ff;
+      color: #234a9b;
+      white-space: nowrap;
+    }
+    .badge.strong {
+      border-color: #bcd3ff;
+      background: linear-gradient(180deg, #eef5ff 0%, #f7fbff 100%);
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.10);
+    }
+    .meta-sep {
+      opacity: 0.65;
+    }
 
     .section {
       margin-top: 16px;
       background: var(--card);
-      border: 1px solid var(--line);
+      border: 1px solid rgba(18, 38, 74, 0.10);
       border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 18px 20px;
+      box-shadow: 0 10px 30px rgba(10, 22, 48, 0.08);
+      padding: 20px 22px;
+      backdrop-filter: blur(8px);
     }
     .section h2 {
       margin: 0 0 10px;
-      font-size: 22px;
-      letter-spacing: 0.01em;
+      font-size: 20px;
+      letter-spacing: 0.02em;
+      color: #0f2650;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
-    .section p { margin: 0; color: #273a5f; }
+    .section h2::after {
+      content: "";
+      height: 1px;
+      flex: 1 1 auto;
+      background: linear-gradient(90deg, rgba(37, 99, 235, 0.35), rgba(124, 58, 237, 0.18), transparent);
+    }
+    .section p { margin: 0; color: #223a63; }
 
     .exp-layout {
       display: grid;
@@ -160,22 +267,32 @@
     }
     .pub-card {
       display: grid;
-      grid-template-columns: 210px 1fr;
-      gap: 12px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 10px;
-      margin-bottom: 8px;
-      background: #fcfdff;
+      grid-template-columns: minmax(220px, clamp(220px, 24vw, 280px)) 1fr;
+      gap: 16px;
+      border: 1px solid rgba(18, 38, 74, 0.12);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 12px;
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow:
+        0 12px 30px rgba(8, 18, 37, 0.10),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85);
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+      will-change: transform;
+    }
+    .pub-card:hover {
+      transform: translateY(-1px);
+      border-color: rgba(29, 78, 216, 0.28);
+      box-shadow: 0 18px 54px rgba(10, 22, 48, 0.16);
     }
     .thumb {
       width: 100%;
-      border-radius: 10px;
-      border: 1px solid var(--line);
+      border-radius: 12px;
+      border: 1px solid rgba(18, 38, 74, 0.10);
       overflow: hidden;
-      background: #eef4ff;
-      aspect-ratio: 4 / 3;
-      min-height: 130px;
+      background: linear-gradient(180deg, #eff5ff 0%, #f7fbff 100%);
+      aspect-ratio: 16 / 9;
+      min-height: clamp(160px, 18vw, 220px);
     }
     .thumb.placeholder {
       display: flex;
@@ -197,32 +314,89 @@
     .thumb img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
-      background: #f7faff;
+      object-fit: cover;
+      background: #eef4ff;
       display: block;
     }
     .pub-title {
-      margin: 0 0 5px;
-      font-size: 16px;
-      line-height: 1.35;
+      margin: 0 0 6px;
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.28;
+      letter-spacing: -0.01em;
+    }
+    .pub-body {
+      min-width: 0;
     }
     .pub-meta {
       color: var(--muted);
       font-size: 13px;
       margin-bottom: 7px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: baseline;
+    }
+    .pub-authors {
+      flex: 0 1 auto;
+      min-width: 0;
+    }
+    .pub-sep {
+      opacity: 0.55;
+      flex: 0 0 auto;
+      user-select: none;
+    }
+    .pub-venue {
+      flex: 0 0 auto;
+      white-space: nowrap;
     }
     .sum-line {
       font-size: 13px;
-      margin: 2px 0;
+      margin: 6px 0;
       color: #213658;
+      display: grid;
+      grid-template-columns: 78px 1fr;
+      column-gap: 10px;
+      align-items: start;
     }
-    .sum-line strong { color: #10306c; }
+    .sum-line strong {
+      color: #10306c;
+      display: block;
+      line-height: 1.35;
+      padding-top: 1px;
+      white-space: nowrap;
+    }
+    .sum-text {
+      display: block;
+      line-height: 1.55;
+      min-width: 0;
+      word-break: break-word;
+    }
     .pub-links {
       margin-top: 8px;
       font-size: 13px;
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+    }
+    .pub-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(29, 78, 216, 0.22);
+      background: rgba(29, 78, 216, 0.08);
+      color: #1d4ed8;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+    }
+    .pub-links a:hover {
+      transform: translateY(-1px);
+      background: rgba(29, 78, 216, 0.12);
+      border-color: rgba(29, 78, 216, 0.30);
+      text-decoration: none;
     }
 
     .timeline-list {
@@ -232,6 +406,33 @@
       font-size: 14px;
     }
     .timeline-list li { margin: 4px 0; }
+    .activity-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .activity-card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fcfdff;
+      padding: 12px 14px;
+    }
+    .activity-title {
+      margin: 0 0 8px;
+      font-size: 14px;
+      font-weight: 800;
+      color: #244a9e;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .activity-list {
+      margin: 0;
+      padding-left: 18px;
+      color: #2f4267;
+      font-size: 14px;
+    }
+    .activity-list li { margin: 5px 0; }
 
     footer {
       margin-top: 14px;
@@ -245,6 +446,7 @@
       .avatar { max-width: 260px; }
       .exp-layout { grid-template-columns: 1fr; }
       .pub-card { grid-template-columns: 1fr; }
+      .activity-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -253,7 +455,7 @@
     <section class="hero">
       <img class="avatar" src="info/0b82368afdf6cfc5f88372469b8d40da_compress.jpg" alt="Yifeng Shi portrait" />
       <div>
-        <h1>Yifeng Shi</h1>
+        <h1><span class="name">Yifeng Shi</span></h1>
         <div class="headline">
           Principal Architect & AI Research Lead on Computer Vision
         </div>
@@ -268,8 +470,26 @@
           <a href="https://scholar.google.com/citations?hl=zh-CN&user=KlHuj2QAAAAJ" target="_blank" rel="noreferrer">Profile</a>
         </div>
         <div class="hero-meta">
-          Education: B.Eng. & M.Eng. in Information Engineering, Tianjin University.<br />
-          Current: KE Holdings (Spatial Intelligence / World Models). Formerly: Baidu (Autonomous Driving & Visual Foundation Systems).
+          <div class="meta-row">
+            <span class="meta-label">Education</span>
+            <span>B.Eng. &amp; M.Eng. in Information Engineering, Tianjin University</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Key service</span>
+            <span class="meta-badges">
+              <span class="badge strong">CSIG Council Member</span>
+              <span class="badge strong">NeurIPS 2026 Area Chair</span>
+              <span class="badge strong">ACMMM 2026 PC</span>
+              <span class="badge">ECCV 2024 CoopInt Workshop PC</span>
+            </span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Current</span>
+            <span>KE Holdings (Spatial Intelligence / World Models)</span>
+            <span class="meta-sep">·</span>
+            <span class="meta-label">Formerly</span>
+            <span>Baidu (Autonomous Driving &amp; Visual Foundation Systems)</span>
+          </div>
         </div>
       </div>
     </section>
@@ -296,7 +516,7 @@
         <aside class="panel-card">
           <h3 class="panel-title">Recent Academic Updates</h3>
           <ul class="panel-list">
-            <li>[2026 Preview !!!] In H1, we plan to release multiple foundation models and datasets for 3DGS reconstruction and generation; in H2, we plan to release an indoor world model.</li>
+            <li>[2026] PanoWorld / AdaptSplat / You Only Gaussian Once / ArtifactWorld: our latest 3DGS + indoor spatial world model works released on arXiv.</li>
             <li>[2025] Sat2RealCity / DoReMi / AttentionGS: papers on world models and 3D Gaussian Splatting released on arXiv.</li>
             <li>[2025] RT-DETRv3 accepted by WACV, delivering strong real-time end-to-end detection performance.</li>
             <li>[2024] ViT-CoMer accepted by CVPR, strengthening dense prediction backbone design.</li>
@@ -322,20 +542,32 @@
 
     <section class="section">
       <h2>Standards & Professional Activities</h2>
-      <ul class="timeline-list">
-        <li>CSIG (China Society of Image and Graphics): Council Member.</li>
-        <li>Industry standardization participation in vehicle-road data exchange specifications and equipment testing practices.</li>
-        <li>Contributor to industry practice white papers in vehicle-road cooperative intelligent transportation.</li>
-        <li>Reviewer (selected journals): TPAMI, IJCV, TCSVT.</li>
-        <li>Reviewer (selected conferences): CVPR, ICCV, ECCV, NeurIPS, AAAI, ACM MM.</li>
-        <li>ECCV 2024 Cooperative Intelligence Workshop: Program Committee.</li>
-        <li>CVPR 2023 Foundation Model Workshop Challenge: Organizer.</li>
-        <li>Guangdong-Hong Kong-Macao Greater Bay Area 3D Detection Challenge: Problem Setter.</li>
-      </ul>
+      <div class="activity-grid">
+        <div class="activity-card">
+          <h3 class="activity-title">Key roles</h3>
+          <ul class="activity-list">
+            <li><strong>CSIG</strong> (China Society of Image and Graphics): <strong>Council Member</strong></li>
+            <li><strong>NeurIPS 2026</strong>: <strong>Area Chair</strong></li>
+            <li><strong>ACMMM 2026</strong>: <strong>Program Committee</strong></li>
+            <li><strong>ECCV 2024</strong> Cooperative Intelligence Workshop: <strong>Program Committee</strong></li>
+          </ul>
+        </div>
+        <div class="activity-card">
+          <h3 class="activity-title">Community & standards</h3>
+          <ul class="activity-list">
+            <li>Reviewer (selected journals): TPAMI, IJCV, TCSVT</li>
+            <li>Reviewer (selected conferences): CVPR, ICCV, ECCV, NeurIPS, AAAI, ACM MM</li>
+            <li>Vehicle-road data exchange standards &amp; equipment testing practices</li>
+            <li>Contributor to vehicle-road cooperative ITS white papers</li>
+            <li>CVPR 2023 Foundation Model Workshop Challenge: Organizer</li>
+            <li>Greater Bay Area 3D Detection Challenge: Problem Setter</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <footer>
-      Last updated: 2026-03-02 · Full list rendered from Scholar export
+      Last updated: 2026-05-28 · Full list rendered from Scholar export
     </footer>
   </div>
 
@@ -409,6 +641,26 @@
     }
 
     const curatedSummaries = {
+      "panoworld a generative spatial world model for consistent whole-house panorama synthesis": {
+        problem: "Whole-house panorama tours need both photorealistic detail and cross-room spatial/material consistency, which pure 2D generation and monolithic 3D generation struggle to achieve at scale.",
+        method: "Autoregressive node-based panorama generation guided by a floorplan-derived 3D shell plus a progressive 3DGS cache as spatial memory, with a room-aware panoramic LRM for topology-consistent updates.",
+        impact: "Enables consistent, scalable whole-house VR tour synthesis with better cross-node layout/material alignment while retaining high-frequency 2D visual quality."
+      },
+      "adaptsplat adapting vision foundation models for feed-forward 3d gaussian splatting": {
+        problem: "Feed-forward 3DGS often over-smooths high-frequency geometry and generalizes poorly across domains due to spectral bias and over-engineered pipelines.",
+        method: "A minimalist Frequency-Preserving Adapter (FPA) that activates vision foundation model priors and injects directional high-frequency signals via attention PE + adaptive residual modulation.",
+        impact: "Improves high-frequency geometric fidelity and cross-domain generalization, providing a strong and simple new baseline for feed-forward 3DGS."
+      },
+      "you only gaussian once controllable 3d gaussian splatting for ultra-densely sampled scenes": {
+        problem: "Standard 3DGS is hard to deploy: densification is heuristic/unpredictable, benchmarks can reward hallucination, and multi-sensor capture introduces data pollution.",
+        method: "A deterministic, budget-aware controller for Gaussian growth plus an availability-registration protocol for robust multi-sensor fusion, validated with an ultra-dense Immersion benchmark.",
+        impact: "Bridges the industry–academia gap by making 3DGS controllable and production-ready under strict resource budgets while pushing physical-fidelity evaluation."
+      },
+      "artifactworld scaling 3d gaussian splatting artifact restoration via video generation models": {
+        problem: "Sparse-view 3DGS suffers geometric/photometric artifacts; existing restoration methods struggle with temporal coherence and limited training data.",
+        method: "Scale supervision with a large paired video dataset and use a homogeneous video diffusion backbone with heatmap-guided, artifact-aware spatio-temporal restoration.",
+        impact: "Achieves stronger, temporally consistent artifact repair that improves sparse novel-view synthesis and robust 3D reconstruction."
+      },
       "sat2realcity geometry-aware and appearance-controllable 3d urban generation from satellite imagery": {
         problem: "City-scale 3D generation often depends on expensive 3D assets and weakly appearance-aligned priors.",
         method: "The framework combines OSM spatial priors, controllable appearance modeling, and semantic guidance from multimodal models.",
@@ -626,10 +878,8 @@
       return `<strong>${raw}</strong>`;
     }
 
-    function conciseText(text, maxLen = 140) {
-      const t = String(text || "").replace(/\s+/g, " ").trim();
-      if (t.length <= maxLen) return t;
-      return `${t.slice(0, maxLen - 1).trim()}…`;
+    function conciseText(text) {
+      return String(text || "").replace(/\s+/g, " ").trim();
     }
 
     const DATA_DIR = "info";
@@ -684,18 +934,31 @@
           const summary = curated || (preset ? abstractBased[preset] : inferSummary(p.title));
           const card = document.createElement("article");
           card.className = "pub-card";
-          const problem = conciseText(summary.problem, 135);
-          const method = conciseText(summary.method, 135);
-          const impact = conciseText(summary.impact, 135);
+          const problem = conciseText(summary.problem);
+          const method = conciseText(summary.method);
+          const impact = conciseText(summary.impact);
+          const authors = String(p.authors || "")
+            .replace(/\s*\.\.\.\s*/g, " et al.")
+            .replace(/…/g, "")
+            .replace(/\s+/g, " ")
+            .trim();
+          const venueClean = String(p.venue || "")
+            .replace(/…/g, "")
+            .replace(/\s+/g, " ")
+            .trim();
           card.innerHTML = `
             ${renderThumb(p)}
-            <div>
+            <div class="pub-body">
               <h4 class="pub-title">${p.title}</h4>
-              <div class="venue-tags">${venueTags(p.venue)}</div>
-              <div class="pub-meta">${p.authors} · ${formatVenue(p.venue)}</div>
-              <div class="sum-line"><strong>Problem:</strong> ${problem}</div>
-              <div class="sum-line"><strong>Method:</strong> ${method}</div>
-              <div class="sum-line"><strong>Impact:</strong> ${impact}</div>
+              <div class="venue-tags">${venueTags(venueClean)}</div>
+              <div class="pub-meta">
+                <span class="pub-authors">${authors}</span>
+                <span class="pub-sep">·</span>
+                <span class="pub-venue">${formatVenue(venueClean)}</span>
+              </div>
+              <div class="sum-line"><strong>Problem</strong><span class="sum-text">${problem}</span></div>
+              <div class="sum-line"><strong>Method</strong><span class="sum-text">${method}</span></div>
+              <div class="sum-line"><strong>Impact</strong><span class="sum-text">${impact}</span></div>
               <div class="pub-links"><a href="${p.link}" target="_blank" rel="noreferrer">Scholar Entry</a></div>
             </div>
           `;

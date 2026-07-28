@@ -1,8 +1,16 @@
 [
   {
+    "title": "Pano2World: End-to-End 3D Generation via Unified Multi-View Sequences",
+    "authors": "Zhenjia Li, Jinrang Jia, Yifeng Shi",
+    "venue": "arXiv preprint arXiv:2607.00832 , 2026",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2607.00832",
+    "type": "paper"
+  },
+  {
     "title": "PanoWorld: A Generative Spatial World Model for Consistent Whole-House Panorama Synthesis",
     "authors": "Jinrang Jia, Zhenjia Li, Yijiang Hu, Yifeng Shi",
-    "venue": "arXiv preprint arXiv:2605.17916 , 2026",
+    "venue": "SIGGRAPH Asia , 2026",
     "year": 2026,
     "link": "https://arxiv.org/abs/2605.17916",
     "type": "paper"
@@ -18,7 +26,7 @@
   {
     "title": "You Only Gaussian Once: Controllable 3D Gaussian Splatting for Ultra-Densely Sampled Scenes",
     "authors": "Jinrang Jia, Zhenjia Li, Yifeng Shi",
-    "venue": "arXiv preprint arXiv:2604.21400 , 2026",
+    "venue": "PRCV , 2026",
     "year": 2026,
     "link": "https://arxiv.org/abs/2604.21400",
     "type": "paper"
@@ -26,7 +34,7 @@
   {
     "title": "ArtifactWorld: Scaling 3D Gaussian Splatting Artifact Restoration via Video Generation Models",
     "authors": "Xinliang Wang, Yifeng Shi, Zhenyu Wu",
-    "venue": "arXiv preprint arXiv:2604.12251 , 2026",
+    "venue": "ACMMM , 2026",
     "year": 2026,
     "link": "https://arxiv.org/abs/2604.12251",
     "type": "paper"
@@ -34,9 +42,9 @@
   {
     "title": "Sat2RealCity: Geometry-Aware and Appearance-Controllable 3D Urban Generation from Satellite Imagery",
     "authors": "Y Kang, X Wang, Z Wu, Y Shi, H Zhu",
-    "venue": "arXiv preprint arXiv:2511.11470 , 2025",
-    "year": 2025,
-    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=KlHuj2QAAAAJ&cstart=20&pagesize=80&citation_for_view=KlHuj2QAAAAJ:_Qo2XoVZTnwC",
+    "venue": "PRCV , 2026",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2511.11470",
     "type": "paper"
   },
   {

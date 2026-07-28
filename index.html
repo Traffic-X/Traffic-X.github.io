@@ -236,6 +236,35 @@
       font-size: 13px;
     }
     .panel-list li { margin: 5px 0; }
+    .panel-list li.update-news {
+      color: #223a63;
+      list-style: none;
+      margin: 7px 0 8px -16px;
+      line-height: 1.65;
+    }
+    .update-icon {
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      margin-right: 6px;
+      color: #c7911b;
+      vertical-align: -1px;
+      filter: drop-shadow(0 1px 2px rgba(201, 145, 27, 0.22));
+    }
+    .update-icon svg {
+      width: 13px;
+      height: 13px;
+      display: block;
+    }
+    .update-prefix {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      color: #284f98;
+    }
+    .panel-list li.update-news strong {
+      font-weight: 800;
+    }
     .venue-tags {
       display: flex;
       flex-wrap: wrap;
@@ -479,7 +508,6 @@
             <span class="meta-badges">
               <span class="badge strong">CSIG Council Member</span>
               <span class="badge strong">NeurIPS 2026 Area Chair</span>
-              <span class="badge strong">ACMMM 2026 PC</span>
               <span class="badge">ECCV 2024 CoopInt Workshop PC</span>
             </span>
           </div>
@@ -516,11 +544,11 @@
         <aside class="panel-card">
           <h3 class="panel-title">Recent Academic Updates</h3>
           <ul class="panel-list">
-            <li>[2026] PanoWorld / AdaptSplat / You Only Gaussian Once / ArtifactWorld: our latest 3DGS + indoor spatial world model works released on arXiv.</li>
-            <li>[2025] Sat2RealCity / DoReMi / AttentionGS: papers on world models and 3D Gaussian Splatting released on arXiv.</li>
+            <li class="update-news"><span class="update-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.8 13.8 8.2 18.2 10 13.8 11.8 12 16.2 10.2 11.8 5.8 10 10.2 8.2 12 3.8Z"/><path d="M18 15.5 18.8 17.2 20.5 18 18.8 18.8 18 20.5 17.2 18.8 15.5 18 17.2 17.2 18 15.5Z"/></svg></span><span class="update-prefix">[2026] Accepted:</span> <strong>PanoWorld</strong> (SIGGRAPH Asia), <strong>ArtifactWorld</strong> (ACMMM), <strong>Sat2RealCity</strong>, <strong>You Only Gaussian Once</strong> (PRCV).</li>
+            <li>[2026] Pano2World / AdaptSplat: latest indoor spatial world model and feed-forward 3DGS works released on arXiv.</li>
+            <li>[2025] DoReMi / AttentionGS: papers on world models and 3D Gaussian Splatting released on arXiv.</li>
             <li>[2025] RT-DETRv3 accepted by WACV, delivering strong real-time end-to-end detection performance.</li>
             <li>[2024] ViT-CoMer accepted by CVPR, strengthening dense prediction backbone design.</li>
-            <li>[2024] Served as Program Committee at ECCV Cooperative Intelligence Workshop.</li>
             <li>[2023] V2X-Seq and MonoUNI advanced cooperative autonomous-driving perception and unified monocular 3D detection.</li>
           </ul>
         </aside>
@@ -548,8 +576,6 @@
           <ul class="activity-list">
             <li><strong>CSIG</strong> (China Society of Image and Graphics): <strong>Council Member</strong></li>
             <li><strong>NeurIPS 2026</strong>: <strong>Area Chair</strong></li>
-            <li><strong>ACMMM 2026</strong>: <strong>Program Committee</strong></li>
-            <li><strong>ECCV 2024</strong> Cooperative Intelligence Workshop: <strong>Program Committee</strong></li>
           </ul>
         </div>
         <div class="activity-card">
@@ -567,7 +593,7 @@
     </section>
 
     <footer>
-      Last updated: 2026-05-28 · Full list rendered from Scholar export
+      Last updated: 2026-07-28 · Full list rendered from Scholar export
     </footer>
   </div>
 
@@ -641,6 +667,11 @@
     }
 
     const curatedSummaries = {
+      "pano2world end-to-end 3d generation via unified multi-view sequences": {
+        problem: "A single panorama only supports look-around viewing; converting it into a persistent, free-viewpoint 3D scene is hard because iterative completion accumulates error and video priors constrain multi-direction coverage.",
+        method: "Builds a coarse 3DGS proxy for geometrically aligned guidance panoramas, jointly denoises multi-view targets with View-Aware Attention Routing, and uses a Latent Feature Adapter to distill multi-view latents into the final 3D Gaussian scene.",
+        impact: "Enables end-to-end single-panorama-to-explorable-3D generation with stronger multi-position panoramic novel-view synthesis quality."
+      },
       "panoworld a generative spatial world model for consistent whole-house panorama synthesis": {
         problem: "Whole-house panorama tours need both photorealistic detail and cross-room spatial/material consistency, which pure 2D generation and monolithic 3D generation struggle to achieve at scale.",
         method: "Autoregressive node-based panorama generation guided by a floorplan-derived 3D shell plus a progressive 3DGS cache as spatial memory, with a room-aware panoramic LRM for topology-consistent updates.",
@@ -839,7 +870,9 @@
         { abbr: "IROS", top: false, type: "conf", patterns: [/iros\b/, /international conference on intelligent robots and systems/] },
         { abbr: "CAAI", top: false, type: "conf", patterns: [/caai\b/, /caai international conference on artificial intelligence/] },
         { abbr: "3DV", top: false, type: "conf", patterns: [/3dv\b/, /international conference on 3d vision/] },
-        { abbr: "ACM MM", top: false, type: "conf", patterns: [/acm mm\b/, /acm international conference on multimedia/] },
+        { abbr: "ACM MM", top: true, type: "conf", patterns: [/acmmm\b/, /acm mm\b/, /acm international conference on multimedia/] },
+        { abbr: "SIGGRAPH Asia", top: true, type: "conf", patterns: [/siggraph asia\b/, /siggraph\s*asia/] },
+        { abbr: "PRCV", top: false, type: "conf", patterns: [/prcv\b/, /pattern recognition and computer vision/] },
         { abbr: "ICMR", top: false, type: "conf", patterns: [/icmr\b/, /international conference on multimedia retrieval/] },
         { abbr: "NSR", top: false, type: "journal", patterns: [/national science review/] },
         { abbr: "TPAMI", top: false, type: "journal", patterns: [/tpami\b/, /transactions on pattern analysis and machine intelligence/] },

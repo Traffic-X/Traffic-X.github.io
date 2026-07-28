@@ -1,4 +1,5 @@
 {
+  "pano2world end-to-end 3d generation via unified multi-view sequences": "info/paper_figs/auto/paper_2026_pano2world_fig1.png",
   "panoworld a generative spatial world model for consistent whole-house panorama synthesis": "info/paper_figs/auto/paper_2026_panoworld_fig1.jpg",
   "adaptsplat adapting vision foundation models for feed-forward 3d gaussian splatting": "info/paper_figs/auto/paper_2026_adaptsplat_fig2.png",
   "you only gaussian once controllable 3d gaussian splatting for ultra-densely sampled scenes": "info/paper_figs/auto/paper_2026_yogo_fig1.jpg",
